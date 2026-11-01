@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,7 @@ public class FacultyController {
     {
 
         //Create Faculties
-        Faculty fac1 = new Faculty(1, "kelly@uc.edu", "Assistant Professor", "Kelly", "Miller");
+        Faculty fac1 = new Faculty(1, "kelly@uc.edu", "Assistant Professor", "Joanita", "Miller");
         Faculty fac2 = new Faculty(2, "Robert@uc.edu", "Instructor Educator", "Robert", "Lee");
         Faculty fac3 = new Faculty(3, "Laura@uc.edu", "West", "Laura", "Adjunct-Professor");
 
@@ -46,9 +47,8 @@ public class FacultyController {
 
             return "list-faculties";
 
-
-
         }
+
 
 
 
